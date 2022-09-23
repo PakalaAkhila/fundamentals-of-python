@@ -1,0 +1,23 @@
+Program to check whether the given number is a Palindrome or  Not a Palindrome is discussed here. Any number is said to be a palindrome if the original number and the reverse of the original number are the same.
+
+For example, 1234321 is a palindrome.
+Original number = 1234321
+The reverse of the number = 1234321
+
+Sample Input:
+454
+
+Sample Output:
+Palindrome
+
+program:
+n=int(input())  #121
+rev=0  
+while n!=0: #121 12 1 0
+    rem=n%10 #1 2 1
+    rev=rev*10+rem #1 12 121
+    n=n//10 #12 1 0
+if n==rev: #121=121
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
